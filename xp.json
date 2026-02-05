@@ -1,20 +1,25 @@
 {
   "홍길동": {
-    "xp": 0,
+    "xp": 80,
     "level": 1,
-    "attendanceDays": 0,
-    "badges": []
+    "attendanceDays": 8,
+    "badges": [
+      "꾸준함의 초심자"
+    ]
   },
   "김철수": {
-    "xp": 0,
-    "level": 1,
-    "attendanceDays": 0,
-    "badges": []
+    "xp": 310,
+    "level": 4,
+    "attendanceDays": 31,
+    "badges": [
+      "꾸준함의 초심자",
+      "개근왕"
+    ]
   },
   "이영희": {
-    "xp": 0,
+    "xp": 50,
     "level": 1,
-    "attendanceDays": 0,
+    "attendanceDays": 5,
     "badges": []
   }
 }
