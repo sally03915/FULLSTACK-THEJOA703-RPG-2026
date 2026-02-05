@@ -1,5 +1,5 @@
 [
-  { "name": "홍길동", "attendanceDays": 8 },
-  { "name": "김철수", "attendanceDays": 31 },
+  { "name": "홍길동", "attendanceDays": 9 },
+  { "name": "김철수", "attendanceDays": 32 },
   { "name": "이영희", "attendanceDays": 5 }
 ]
