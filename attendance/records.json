@@ -1,5 +1,26 @@
 [
-  { "name": "홍길동", "attendanceDays": 120 },
-  { "name": "김철수", "attendanceDays": 112 },
-  { "name": "이영희", "attendanceDays": 118 }
+  {
+    "name": "홍길동",
+    "attendanceDays": 9,
+    "assignmentsCompleted": 3,
+    "totalAssignments": 5,
+    "contributions": 2,
+    "presentations": 0
+  },
+  {
+    "name": "김철수",
+    "attendanceDays": 12,
+    "assignmentsCompleted": 5,
+    "totalAssignments": 5,
+    "contributions": 12,
+    "presentations": 4
+  },
+  {
+    "name": "이영희",
+    "attendanceDays": 6,
+    "assignmentsCompleted": 2,
+    "totalAssignments": 5,
+    "contributions": 0,
+    "presentations": 1
+  }
 ]

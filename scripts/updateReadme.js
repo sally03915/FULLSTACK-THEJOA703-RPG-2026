@@ -28,12 +28,21 @@ const badgeColorMap = {
 
 Object.keys(xpData).forEach(student => {
   const emoji = emojiMap[student] || "🎓";
-  const { attendanceDays, assignmentsCompleted = 0, totalAssignments = 0, contributions = 0, presentations = 0 } = xpData[student];
+  const {
+    attendanceDays = 0,
+    assignmentsCompleted = 0,
+    totalAssignments = 0,
+    contributions = 0,
+    presentations = 0
+  } = xpData[student];
 
-  // ✅ XP 계산: 출석일수 × 10
-  const xp = attendanceDays * 10;
+  // ✅ XP 계산: 출석 + 과제 + 팀플 + 코드 기여 + 발표
+  const xp = (attendanceDays * 10) +
+             (assignmentsCompleted * 20) +
+             (contributions * 10) +
+             (presentations * 20);
 
-  // ✅ 레벨 계산 규칙: 125 XP마다 레벨업 → 과정 끝에 레벨 10
+  // ✅ 레벨 계산 규칙: 125 XP마다 레벨업 → 과정 끝에 최대 레벨 10
   const level = Math.floor(xp / 125) + 1;
 
   // ✅ 자동 뱃지 부여 규칙
@@ -81,7 +90,7 @@ Object.keys(xpData).forEach(student => {
   // 레벨 색깔 이모지 그래프
   const levelGraph = `\`\`\`\nLevel ${level} | ${"🟩".repeat(level)} (${level})\n\`\`\``;
 
-  // README 내 주석 블록 교체 (여기서 잘렸던 부분 완성)
+  // README 내 주석 블록 교체
   const regex = new RegExp(`<!-- ${student}-badge-start -->[\\s\\S]*<!-- ${student}-badge-end -->`, "g");
   const replacement = `<!-- ${student}-badge-start -->\n${badgesRow}\n\n**레벨 그래프**\n${levelGraph}\n<!-- ${student}-badge-end -->`;
 
@@ -93,4 +102,4 @@ Object.keys(xpData).forEach(student => {
 });
 
 fs.writeFileSync("README.md", readme);
-console.log("✅ README에 학생별 뱃지, 레벨 계산, 자동 뱃지 부여가 업데이트되었습니다!");
+console.log("✅ README에 학생별 뱃지, 레벨 계산, 과제·팀플·코드 기여·발표 활동까지 반영되었습니다!");
