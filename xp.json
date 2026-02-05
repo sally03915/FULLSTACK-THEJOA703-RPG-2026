@@ -1,16 +1,16 @@
 {
   "홍길동": {
-    "xp": 80,
-    "level": 1,
-    "attendanceDays": 8,
+    "xp": 100,
+    "level": 2,
+    "attendanceDays": 10,
     "badges": [
       "꾸준함의 초심자"
     ]
   },
   "김철수": {
-    "xp": 310,
+    "xp": 320,
     "level": 4,
-    "attendanceDays": 31,
+    "attendanceDays": 32,
     "badges": [
       "꾸준함의 초심자",
       "개근왕"
