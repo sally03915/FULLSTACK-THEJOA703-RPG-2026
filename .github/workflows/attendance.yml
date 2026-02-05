@@ -5,6 +5,9 @@ on:
     paths:
       - "attendance/**"
 
+permissions:
+  contents: write   # ✅ 저장소에 commit/push 권한 부여
+
 jobs:
   update-xp-and-readme:
     runs-on: ubuntu-latest
@@ -12,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}   # ✅ GitHub Token 사용
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -29,5 +34,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add xp.json README.md
-          git commit -m "Update XP, badges, and README"
+          git commit -m "Update XP, badges, and README" || echo "No changes to commit"
           git push
