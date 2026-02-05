@@ -22,25 +22,26 @@ const badgeColorMap = {
 
 Object.keys(xpData).forEach(student => {
   const emoji = emojiMap[student] || "🎓";
-  const { xp, attendanceDays, badges = [] } = xpData[student];
+  const { attendanceDays } = xpData[student];
+
+  // ✅ XP 계산: 출석일수 × 10
+  const xp = attendanceDays * 10;
 
   // ✅ 레벨 계산 규칙: 100 XP마다 레벨업
   const level = Math.floor(xp / 100) + 1;
 
   // ✅ 자동 뱃지 부여 규칙
-  if (attendanceDays >= 30 && !badges.includes("개근왕")) {
-    badges.push("개근왕");
-  }
-  if (xp >= 200 && !badges.includes("성장중")) {
-    badges.push("성장중");
-  }
-  if (xp >= 500 && !badges.includes("챌린지완료")) {
-    badges.push("챌린지완료");
-  }
-  // 예시: 과제왕은 특정 조건(여기선 XP 300 이상)으로 부여
-  if (xp >= 300 && !badges.includes("과제왕")) {
-    badges.push("과제왕");
-  }
+  let badges = [];
+  if (attendanceDays >= 10) badges.push("개근왕");
+  if (xp >= 200) badges.push("성장중");
+  if (xp >= 300) badges.push("과제왕");
+  if (xp >= 500) badges.push("챌린지완료");
+
+  // 🎯 특별 뱃지 조건 추가
+  // 예시: 출석 15일 이상이면 팀플마스터
+  if (attendanceDays >= 15) badges.push("팀플마스터");
+  // 예시: XP 250 이상이면 코드기여자
+  if (xp >= 250) badges.push("코드기여자");
 
   // 기본 뱃지들
   const attendanceBadge = `![출석뱃지](https://img.shields.io/badge/출석-${attendanceDays}일-blue?style=flat)`;
@@ -73,4 +74,4 @@ Object.keys(xpData).forEach(student => {
 });
 
 fs.writeFileSync("README.md", readme);
-console.log("✅ README에 학생별 뱃지, 레벨 계산, 자동 뱃지 부여가 업데이트되었습니다!");
+console.log("✅ README에 학생별 뱃지, 레벨 계산, 특별 뱃지 자동 부여가 업데이트되었습니다!");
