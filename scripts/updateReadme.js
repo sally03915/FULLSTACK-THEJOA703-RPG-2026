@@ -14,13 +14,13 @@ Object.keys(xpData).forEach(student => {
   const emoji = emojiMap[student] || "🎓";
   const { xp, level, badges, attendanceDays } = xpData[student];
 
-  // HTML 태그로 크기 조절 + style=for-the-badge 적용 (가로 방향)
-  const attendanceBadge = `<img src="https://img.shields.io/badge/출석-${attendanceDays}일-blue?style=for-the-badge" height="24">`;
-  const xpBadge = `<img src="https://img.shields.io/badge/XP-${xp}-yellow?style=for-the-badge" height="24">`;
-  const levelBadge = `<img src="https://img.shields.io/badge/Level-${level}-orange?style=for-the-badge" height="24">`;
+  // 기본 사이즈 Markdown 뱃지 + style=for-the-badge 적용 (가로 방향)
+  const attendanceBadge = `![출석뱃지](https://img.shields.io/badge/출석-${attendanceDays}일-blue?style=for-the-badge)`;
+  const xpBadge = `![XP](https://img.shields.io/badge/XP-${xp}-yellow?style=for-the-badge)`;
+  const levelBadge = `![Level](https://img.shields.io/badge/Level-${level}-orange?style=for-the-badge)`;
   const badgeList = badges.length > 0
-    ? badges.map(b => `<img src="https://img.shields.io/badge/Badge-${encodeURIComponent(b)}-green?style=for-the-badge" height="24">`).join(" ")
-    : `<img src="https://img.shields.io/badge/Badge-없음-lightgrey?style=for-the-badge" height="24">`;
+    ? badges.map(b => `![Badge](https://img.shields.io/badge/Badge-${encodeURIComponent(b)}-green?style=for-the-badge)`).join(" ")
+    : `![Badge](https://img.shields.io/badge/Badge-없음-lightgrey?style=for-the-badge)`;
 
   // 가로 방향으로 한 줄에 나열
   const badgesRow = `${attendanceBadge} ${xpBadge} ${levelBadge} ${badgeList}`;
@@ -37,4 +37,4 @@ Object.keys(xpData).forEach(student => {
 });
 
 fs.writeFileSync("README.md", readme);
-console.log("✅ README에 학생별 뱃지가 가로 방향으로 업데이트되었습니다!");
+console.log("✅ README에 학생별 뱃지가 가로 방향(기본 사이즈)으로 업데이트되었습니다!");
