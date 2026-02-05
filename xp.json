@@ -1,8 +1,8 @@
 {
   "홍길동": {
-    "xp": 60,
+    "xp": 80,
     "level": 1,
-    "attendanceDays": 6,
+    "attendanceDays": 8,
     "badges": [
       "꾸준함의 초심자"
     ]
