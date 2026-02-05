@@ -35,4 +35,5 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add xp.json README.md
           git commit -m "Update XP, badges, and README" || echo "No changes to commit"
-          git push
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push origin HEAD:${{ github.ref }}
