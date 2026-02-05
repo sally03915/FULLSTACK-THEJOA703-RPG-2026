@@ -25,9 +25,12 @@ Object.keys(xpData).forEach(student => {
   // 가로 방향으로 한 줄에 나열
   const badgesRow = `${attendanceBadge} ${xpBadge} ${levelBadge} ${badgeList}`;
 
+  // 레벨 텍스트 그래프 (■ 개수 = level 값)
+  const levelGraph = `\`\`\`\nLevel ${level} | ${"■".repeat(level)}\n\`\`\``;
+
   // README 내 주석 블록 교체
   const regex = new RegExp(`<!-- ${student}-badge-start -->[\\s\\S]*<!-- ${student}-badge-end -->`, "g");
-  const replacement = `<!-- ${student}-badge-start -->\n${badgesRow}\n<!-- ${student}-badge-end -->`;
+  const replacement = `<!-- ${student}-badge-start -->\n${badgesRow}\n\n**레벨 그래프**\n${levelGraph}\n<!-- ${student}-badge-end -->`;
 
   // 학생 이름 앞에 이모지 붙이기
   const nameRegex = new RegExp(`##\\s*${student}`, "g");
@@ -37,4 +40,4 @@ Object.keys(xpData).forEach(student => {
 });
 
 fs.writeFileSync("README.md", readme);
-console.log("✅ README에 학생별 뱃지가 가로 방향(flat 스타일)으로 업데이트되었습니다!");
+console.log("✅ README에 학생별 뱃지와 레벨 그래프가 자동 업데이트되었습니다!");
