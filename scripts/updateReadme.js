@@ -15,12 +15,12 @@ Object.keys(xpData).forEach(student => {
   const { xp, level, badges, attendanceDays } = xpData[student];
 
   // HTML 태그로 크기 조절 + style=for-the-badge 적용 (가로 방향)
-  const attendanceBadge = `<img src="https://img.shields.io/badge/출석-${attendanceDays}일-blue?style=for-the-badge" height="40">`;
-  const xpBadge = `<img src="https://img.shields.io/badge/XP-${xp}-yellow?style=for-the-badge" height="40">`;
-  const levelBadge = `<img src="https://img.shields.io/badge/Level-${level}-orange?style=for-the-badge" height="40">`;
+  const attendanceBadge = `<img src="https://img.shields.io/badge/출석-${attendanceDays}일-blue?style=for-the-badge" height="24">`;
+  const xpBadge = `<img src="https://img.shields.io/badge/XP-${xp}-yellow?style=for-the-badge" height="24">`;
+  const levelBadge = `<img src="https://img.shields.io/badge/Level-${level}-orange?style=for-the-badge" height="24">`;
   const badgeList = badges.length > 0
-    ? badges.map(b => `<img src="https://img.shields.io/badge/Badge-${encodeURIComponent(b)}-green?style=for-the-badge" height="40">`).join(" ")
-    : `<img src="https://img.shields.io/badge/Badge-없음-lightgrey?style=for-the-badge" height="40">`;
+    ? badges.map(b => `<img src="https://img.shields.io/badge/Badge-${encodeURIComponent(b)}-green?style=for-the-badge" height="24">`).join(" ")
+    : `<img src="https://img.shields.io/badge/Badge-없음-lightgrey?style=for-the-badge" height="24">`;
 
   // 가로 방향으로 한 줄에 나열
   const badgesRow = `${attendanceBadge} ${xpBadge} ${levelBadge} ${badgeList}`;
