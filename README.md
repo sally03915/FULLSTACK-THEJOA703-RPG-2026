@@ -122,7 +122,7 @@ Level 1 | 🟩 (1)
 
 ## 🎓 정수정
 <!-- 정수정-badge-start -->
-![출석뱃지](https://img.shields.io/badge/출석-1일-blue?style=flat) ![XP](https://img.shields.io/badge/XP-10-yellow?style=flat) ![Level](https://img.shields.io/badge/Level-1-orange?style=flat) ![Badge](https://img.shields.io/badge/Badge-없음-lightgrey?style=flat)
+![출석뱃지](https://img.shields.io/badge/출석-1일-blue?style=flat) ![XP](https://img.shields.io/badge/XP-30-yellow?style=flat) ![Level](https://img.shields.io/badge/Level-1-orange?style=flat) ![Badge-과제왕](https://img.shields.io/badge/Badge-%EA%B3%BC%EC%A0%9C%EC%99%95-purple?style=flat)
 
 **레벨 그래프**
 ```
@@ -134,7 +134,7 @@ Level 1 | 🟩 (1)
 
 ## 🎓 최다영
 <!-- 최다영-badge-start -->
-![출석뱃지](https://img.shields.io/badge/출석-1일-blue?style=flat) ![XP](https://img.shields.io/badge/XP-10-yellow?style=flat) ![Level](https://img.shields.io/badge/Level-1-orange?style=flat) ![Badge](https://img.shields.io/badge/Badge-없음-lightgrey?style=flat)
+![출석뱃지](https://img.shields.io/badge/출석-1일-blue?style=flat) ![XP](https://img.shields.io/badge/XP-30-yellow?style=flat) ![Level](https://img.shields.io/badge/Level-1-orange?style=flat) ![Badge-과제왕](https://img.shields.io/badge/Badge-%EA%B3%BC%EC%A0%9C%EC%99%95-purple?style=flat)
 
 **레벨 그래프**
 ```

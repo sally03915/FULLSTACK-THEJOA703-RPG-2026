@@ -116,24 +116,28 @@
     "badges": []
   },
   "정수정": {
-    "xp": 10,
+    "xp": 30,
     "level": 1,
     "attendanceDays": 1,
-    "assignmentsCompleted": 0,
+    "assignmentsCompleted": 1,
     "totalAssignments": 1,
     "contributions": 0,
     "presentations": 0,
-    "badges": []
+    "badges": [
+      "과제왕"
+    ]
   },
   "최다영": {
-    "xp": 10,
+    "xp": 30,
     "level": 1,
     "attendanceDays": 1,
-    "assignmentsCompleted": 0,
+    "assignmentsCompleted": 1,
     "totalAssignments": 1,
     "contributions": 0,
     "presentations": 0,
-    "badges": []
+    "badges": [
+      "과제왕"
+    ]
   },
   "최도현": {
     "xp": 0,
