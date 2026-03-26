@@ -58,7 +58,7 @@
   {
     "name": "이일두",
     "attendanceDays": 1,
-    "assignmentsCompleted": 1,
+    "assignmentsCompleted": 0,
     "totalAssignments": 1,
     "contributions": 0,
     "presentations": 0
@@ -74,7 +74,7 @@
   {
     "name": "장영탁",
     "attendanceDays": 1,
-    "assignmentsCompleted": 1,
+    "assignmentsCompleted": 0,
     "totalAssignments": 1,
     "contributions": 0,
     "presentations": 0
@@ -82,7 +82,7 @@
   {
     "name": "정수정",
     "attendanceDays": 1,
-    "assignmentsCompleted": 1,
+    "assignmentsCompleted": 0,
     "totalAssignments": 1,
     "contributions": 0,
     "presentations": 0
@@ -90,7 +90,7 @@
   {
     "name": "최다영",  
     "attendanceDays": 1,
-    "assignmentsCompleted": 1,
+    "assignmentsCompleted": 0,
     "totalAssignments": 1,
     "contributions": 0,
     "presentations": 0
