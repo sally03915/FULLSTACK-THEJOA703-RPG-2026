@@ -1,14 +1,15 @@
 {
   "김보라": {
-    "xp": 180,
+    "xp": 190,
     "level": 2,
     "attendanceDays": 7,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-    "contributions": 9,
+    "contributions": 10,
     "presentations": 0,
     "badges": [
-      "과제왕"
+      "과제왕",
+      "코드기여자"
     ]
   },
   "김욱진": {
@@ -160,15 +161,16 @@
     ]
   },
   "하혜원": {
-    "xp": 180,
+    "xp": 190,
     "level": 2,
     "attendanceDays": 7,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-    "contributions": 9,
+    "contributions": 10,
     "presentations": 0,
     "badges": [
-      "과제왕"
+      "과제왕",
+      "코드기여자"
     ]
   }
 }
