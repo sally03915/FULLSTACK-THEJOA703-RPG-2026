@@ -56,12 +56,12 @@
     ]
   },
   "문대원": {
-    "xp": 320,
+    "xp": 330,
     "level": 3,
     "attendanceDays": 14,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-    "contributions": 16,
+    "contributions": 17,
     "presentations": 0,
     "badges": [
       "과제왕",
@@ -140,12 +140,12 @@
     ]
   },
   "정수정": {
-    "xp": 350,
+    "xp": 360,
     "level": 3,
     "attendanceDays": 14,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-    "contributions": 19,
+    "contributions": 20,
     "presentations": 0,
     "badges": [
       "과제왕",
@@ -168,12 +168,12 @@
     ]
   },
   "최윤정": {
-    "xp": 360,
+    "xp": 370,
     "level": 3,
     "attendanceDays": 14,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-    "contributions": 20,
+    "contributions": 21,
     "presentations": 0,
     "badges": [
       "과제왕",
