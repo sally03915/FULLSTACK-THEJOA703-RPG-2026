@@ -1,31 +1,31 @@
 [
   {
     "name": "김보라",
-  "attendanceDays": 14,
+  "attendanceDays": 16,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-    "contributions": 20,
+    "contributions": 21,
     "presentations": 0
   },
   {
     "name": "김욱진",
-  "attendanceDays": 14,
+  "attendanceDays": 16,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-   "contributions": 21,
+   "contributions": 22,
     "presentations": 0
   },
   {
     "name": "김주엽",  
-  "attendanceDays": 14,
+  "attendanceDays": 16,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-   "contributions": 19,
+   "contributions": 20,
     "presentations": 0
   },
   {
     "name": "김현미",
-  "attendanceDays": 14,
+  "attendanceDays": 16,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
    "contributions": 19,
@@ -33,82 +33,82 @@
   },
   {
     "name": "문대원",
-  "attendanceDays": 14,
-    "assignmentsCompleted": 1,
-    "totalAssignments": 1,
-   "contributions": 19,
-    "presentations": 0
-  },
-  {
-    "name": "손예진",  
-    "attendanceDays": 13, 
-    "assignmentsCompleted": 1,
-    "totalAssignments": 1,
-   "contributions": 19,
-    "presentations": 0
-  },
-  {
-    "name": "손창기",
-  "attendanceDays": 14,
-    "assignmentsCompleted": 1,
-    "totalAssignments": 1,
-   "contributions": 17,
-    "presentations": 0
-  },
-  {
-    "name": "이일두",
-  "attendanceDays": 14,
-    "assignmentsCompleted": 1,
-    "totalAssignments": 1,
-   "contributions": 18,
-    "presentations": 0
-  },
-  {
-    "name": "임채연",  
-  "attendanceDays": 14,
-    "assignmentsCompleted": 1,
-    "totalAssignments": 1,
-    "contributions": 19,
-    "presentations": 0
-  },
-  {
-    "name": "장영탁",
-  "attendanceDays": 14,
-    "assignmentsCompleted": 1,
-    "totalAssignments": 1,
-    "contributions": 20,
-    "presentations": 0
-  },
-  {
-    "name": "정수정",
-  "attendanceDays": 14,
-    "assignmentsCompleted": 1,
-    "totalAssignments": 1,
-    "contributions": 22,
-    "presentations": 0
-  },
-  {
-    "name": "최다영",  
-  "attendanceDays": 14,
+  "attendanceDays": 16,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
    "contributions": 20,
     "presentations": 0
   },
   {
-    "name": "최윤정",
-  "attendanceDays": 14,
+    "name": "손예진",  
+    "attendanceDays": 15, 
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-    "contributions": 25,
+   "contributions": 20,
+    "presentations": 0
+  },
+  {
+    "name": "손창기",
+  "attendanceDays": 16,
+    "assignmentsCompleted": 1,
+    "totalAssignments": 1,
+   "contributions": 18,
+    "presentations": 0
+  },
+  {
+    "name": "이일두",
+  "attendanceDays": 16,
+    "assignmentsCompleted": 1,
+    "totalAssignments": 1,
+   "contributions": 19,
+    "presentations": 0
+  },
+  {
+    "name": "임채연",  
+  "attendanceDays": 16,
+    "assignmentsCompleted": 1,
+    "totalAssignments": 1,
+    "contributions": 20,
+    "presentations": 0
+  },
+  {
+    "name": "장영탁",
+  "attendanceDays": 16,
+    "assignmentsCompleted": 1,
+    "totalAssignments": 1,
+    "contributions": 21,
+    "presentations": 0
+  },
+  {
+    "name": "정수정",
+  "attendanceDays": 16,
+    "assignmentsCompleted": 1,
+    "totalAssignments": 1,
+    "contributions": 23,
+    "presentations": 0
+  },
+  {
+    "name": "최다영",  
+  "attendanceDays": 16,
+    "assignmentsCompleted": 1,
+    "totalAssignments": 1,
+   "contributions": 21,
+    "presentations": 0
+  },
+  {
+    "name": "최윤정",
+  "attendanceDays": 16,
+    "assignmentsCompleted": 1,
+    "totalAssignments": 1,
+    "contributions": 26,
     "presentations": 0
   },
   {
     "name": "하혜원",  
-     "attendanceDays": 13,
+     "attendanceDays": 15,
     "assignmentsCompleted": 1,
     "totalAssignments": 1,
-    "contributions": 17,
+    "contributions": 18,
     "presentations": 0
   }
 ]
