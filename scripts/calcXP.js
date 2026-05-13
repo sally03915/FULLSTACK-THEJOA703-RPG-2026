@@ -17,6 +17,40 @@ const xpFile = "xp.json";
 const records = safeReadJSON(attendanceFile);
 let xpData = {};
 
+// ✅ 추가된 부분: badgeColorMap 정의 (updateReadme.js와 동일하게 맞춤)
+const badgeColorMap = {
+  "개근왕": "green",
+  "출석마스터": "blue",
+  "끝까지함께": "gold",
+  "과제왕": "purple",
+  "성실제출자": "orange",
+  "챌린지완료": "red",
+  "팀플마스터": "lightblue",
+  "코드기여자": "brown",
+  "발표왕": "yellow",
+  "성장중": "pink",
+  "레벨업마스터": "teal",
+  "최종보스클리어": "black",
+  "블로그왕": "violet",
+  "튜토리얼 제작자": "cyan",
+  "디버깅 마스터": "darkgreen",
+  "스터디 리더": "navy",
+  "지식 공유자": "orange",
+  "아이디어 메이커": "pink",
+  "챌린지 헌터": "red",
+  "커뮤니티 스타": "gold",
+  "출석 챌린지": "blue",
+  "과제 챌린지": "purple",
+  "협업 챌린지": "lightblue",
+  "코드 챌린지": "brown",
+  "발표 챌린지": "yellow",
+  "XP 챌린지": "red",
+  "스피드런 챌린지": "orange",
+  "올라운더 챌린지": "teal",
+  "마스터 챌린지": "black",
+  "커뮤니티 챌린지": "gold"
+};
+
 records.forEach(student => {
   const {
     name,
@@ -93,21 +127,23 @@ records.forEach(student => {
   if (ideasProposed >= 3) badges.push("아이디어 메이커");
 
   // 🔥 챌린지 완료 조건 다양화
-  if (attendanceDays >= 30) badges.push("출석 챌린지"); // 30일 연속 개근
-  if (assignmentsCompleted >= 20) badges.push("과제 챌린지"); // 과제 20개 이상 제출
-  if (student.teamProjectsLed >= 2) badges.push("협업 챌린지"); // 팀 프로젝트 2회 이상 주도
-  if (contributions >= 50) badges.push("코드 챌린지"); // 깃허브 PR/커밋 50회 이상
-  if (presentations >= 5) badges.push("발표 챌린지"); // 발표 5회 이상
-  if (xp >= 1000) badges.push("XP 챌린지"); // XP ≥ 1000
-  if (level >= 5 && attendanceDays <= 30) badges.push("스피드런 챌린지"); // 30일 이내 레벨 5 달성
+  if (attendanceDays >= 30) badges.push("출석 챌린지");
+  if (assignmentsCompleted >= 20) badges.push("과제 챌린지");
+  if (student.teamProjectsLed >= 2) badges.push("협업 챌린지");
+  if (contributions >= 50) badges.push("코드 챌린지");
+  if (presentations >= 5) badges.push("발표 챌린지");
+  if (xp >= 1000) badges.push("XP 챌린지");
+  if (level >= 5 && attendanceDays <= 30) badges.push("스피드런 챌린지");
   if (attendanceDays > 0 && assignmentsCompleted > 0 && contributions > 0 && presentations > 0 && student.teamProjectsLed > 0) {
-    badges.push("올라운더 챌린지"); // 모든 활동 최소 1회 이상
+    badges.push("올라운더 챌린지");
   }
-  if (badges.length >= Object.keys(badgeColorMap).length) badges.push("마스터 챌린지"); // 모든 뱃지 획득
-  if (student.codeReviews >= 3) badges.push("커뮤니티 챌린지"); // 코드 리뷰/멘토링 3회 이상
 
+  // ✅ badgeColorMap 정의 추가로 에러 방지
+  if (badges.length >= Object.keys(badgeColorMap).length) badges.push("마스터 챌린지");
 
-  // 챌린지 헌터: 추천 챌린지 중 5개 이상 달성
+  if (student.codeReviews >= 3) badges.push("커뮤니티 챌린지");
+
+  // 챌린지 헌터
   const challengeCount = badges.filter(b =>
     ["블로그왕","튜토리얼 제작자","디버깅 마스터","스터디 리더","지식 공유자","아이디어 메이커"].includes(b)
   ).length;
